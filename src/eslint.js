@@ -49,6 +49,23 @@ const lamadreEslintConfig = [
       eqeqeq: ['error', 'always', { null: 'ignore' }],
       'prefer-const': 'error',
       'no-var': 'error',
+
+      // Sentry baseline: force centralized instrumentation wrapper
+      'no-restricted-imports': [
+        'warn',
+        {
+          paths: [
+            {
+              name: '@sentry/react',
+              message: 'Use the project wrapper (ex: src/lib/sentry.ts) instead of direct imports.',
+            },
+            {
+              name: '@sentry/browser',
+              message: 'Use the project wrapper (ex: src/lib/sentry.ts) instead of direct imports.',
+            },
+          ],
+        },
+      ],
     },
   },
 

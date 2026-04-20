@@ -1,11 +1,11 @@
 {
-  "name": "@grupomassaru/configs",
+  "name": "@grupolamadre/configs",
   "version": "1.0.0",
   "description": "Shared ESLint, TypeScript, Vite, Vitest, and Prettier configs for Grupo Lamadre projects",
   "main": "src/eslint.js",
   "exports": {
     "./eslint": "./src/eslint.js",
-    "./tsconfig": "./src/tsconfig.base.json",
+    "./tsconfig": "./src/tsconfig.json",
     "./vite": "./src/vite.config.base.ts",
     "./vitest": "./src/vitest.config.base.ts",
     "./prettier": "./src/prettier.config.js"
