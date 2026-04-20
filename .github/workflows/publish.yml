@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   publish:
-    name: Publish @grupolamadre/configs
+    name: Publish @grupomassaru/configs
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: '20'
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@grupolamadre'
+          scope: '@grupomassaru'
 
       - name: Install dependencies
         run: npm ci --ignore-scripts
@@ -46,4 +46,4 @@ jobs:
         run: |
           echo "## Publish result: ${{ needs.publish.result }}" >> $GITHUB_STEP_SUMMARY
           echo "Tag: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
-          echo "Package: @grupolamadre/configs@$(echo ${{ github.ref_name }} | sed 's/^v//')" >> $GITHUB_STEP_SUMMARY
+          echo "Package: @grupomassaru/configs@$(echo ${{ github.ref_name }} | sed 's/^v//')" >> $GITHUB_STEP_SUMMARY

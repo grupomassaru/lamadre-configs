@@ -1,5 +1,5 @@
 {
-  "name": "@grupolamadre/configs",
+  "name": "@grupomassaru/configs",
   "version": "1.0.0",
   "description": "Shared ESLint, TypeScript, Vite, Vitest, and Prettier configs for Grupo Lamadre projects",
   "main": "src/eslint.js",
