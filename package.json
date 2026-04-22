@@ -8,6 +8,7 @@
     "./tsconfig": "./src/tsconfig.json",
     "./vite": "./src/vite.config.base.ts",
     "./vitest": "./src/vitest.config.base.ts",
+    "./playwright": "./src/playwright.config.base.ts",
     "./prettier": "./src/prettier.config.js"
   },
   "files": [
@@ -41,6 +42,7 @@
     "eslint-plugin-react-hooks": ">=5",
     "vite": ">=5",
     "vitest": ">=2",
+    "@playwright/test": ">=1.57",
     "prettier": ">=3"
   },
   "devDependencies": {
@@ -49,6 +51,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "vite": "^5.0.0",
     "vitest": "^2.0.0",
+    "@playwright/test": "^1.57.0",
     "prettier": "^3.0.0",
     "typescript": "^5.0.0"
   }

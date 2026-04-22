@@ -71,6 +71,24 @@ export default mergeConfig(lamadreVitestBase, defineConfig({
 }));
 ```
 
+### Playwright (`playwright.config.ts`)
+
+```ts
+import { defineConfig, mergeConfig } from '@playwright/test';
+import lamadrePlaywrightBase from '@grupomassaru/configs/playwright';
+
+export default mergeConfig(lamadrePlaywrightBase, defineConfig({
+  use: {
+    baseURL: 'http://127.0.0.1:4173',
+  },
+  webServer: {
+    command: 'npm run dev -- --host 127.0.0.1 --port 4173',
+    url: 'http://127.0.0.1:4173',
+    reuseExistingServer: !process.env.CI,
+  },
+}));
+```
+
 ### Prettier (`prettier.config.js`)
 
 ```js
@@ -95,3 +113,4 @@ git push origin v1.0.1
 | Insurance Ops Hub | grupomassaru/insurance-ops-hub |
 | Opportunity Navigator | grupomassaru/opportunity-navigator |
 | Ecoalternativa | grupomassaru/envision-yield-lab |
+| Noe | grupomassaru/grow-guard-system |
