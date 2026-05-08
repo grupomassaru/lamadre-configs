@@ -12,7 +12,7 @@ permissions:
 jobs:
   publish:
     name: Publish @grupolamadre/configs
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64, lamadre]
 
     steps:
       - name: Checkout
@@ -38,7 +38,7 @@ jobs:
 
   notify:
     name: Tag summary
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, x64, lamadre]
     needs: publish
     if: always()
     steps:
