@@ -1,0 +1,9 @@
+# CODEOWNERS
+
+# Default owner for governance-sensitive changes.
+* @grupomassaru
+
+# Repository operations and automation.
+/.github/ @grupomassaru
+/AGENTS.md @grupomassaru
+/README.md @grupomassaru
